@@ -1,0 +1,23 @@
+apiVersion: aws.upbound.io/v1beta1
+kind: ProviderConfig
+metadata:
+  name: aws-local
+spec:
+  credentials:
+    source: Secret
+    secretRef:
+      namespace: crossplane-system
+      name: aws-creds
+      key: creds
+  skip_credentials_validation: true
+  skip_requesting_account_id: true
+  skip_region_validation: true
+  skip_metadata_api_check: true
+  s3_use_path_style: true
+  endpoint:
+    services:
+      - s3
+    url:
+      type: Static
+      static: http://host.docker.internal:4566
+    hostnameImmutable: true
