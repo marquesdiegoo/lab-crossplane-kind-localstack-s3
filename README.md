@@ -137,7 +137,7 @@ helm repo add komodorio https://helm-charts.komodor.io \
 Acesse o Komoplane:
 
 ```bash
-kubectl port-forward svc/komoplane 8090:8090 -n komoplane
+kubectl port-forward svc/komoplane 8090:8090
 ```
 
 Abra: [http://localhost:8090](http://localhost:8090)
