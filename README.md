@@ -8,6 +8,7 @@ Um **laboratório completo para rodar localmente** com as seguintes ferramentas:
 * **[LocalStack](https://localstack.cloud/):** Mock da AWS para testes locais.
 * **[Docker](https://docs.docker.com/engine/install/):** Instalar Docker.
 * **[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/):** Instalar kubectl.
+* * **[helm](https://helm.sh/docs/intro/install/):** Para instalação do KEDA como chart.
 * **[aws-cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html):** Instalar aws-cli.
 * Provisionamento de um **bucket S3** local usando o **Crossplane + LocalStack**.
 
